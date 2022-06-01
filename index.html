@@ -222,9 +222,13 @@ Hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（�
 
 <p>注意：除 posts 文件夹之外，开头命名为 (下划线)的文件 &#x2F; 文件夹和隐藏的文件将会被忽略。<br>3.5. themes<br>主题文件夹。Hexo 会根据主题来解析source目录中的markdown文件生成静态页面。官网主题详述</p>
 <h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2> <br>
-可以执行下列命令来创建一篇新文章。  
-$ hexo new [layout]
-
+可以执行下列命令来创建一篇新文章。
+  
+<p>$ hexo new [layout]</p>
+<h1 id="A-绑定域名到-Hexo-博客"><a href="#A-绑定域名到-Hexo-博客" class="headerlink" title="A 绑定域名到 Hexo 博客"></a>A 绑定域名到 Hexo 博客</h1><p>进入本地博客文件夹的 source 目录，打开记事本，里面输入自己的域名，如 <a target="_blank" rel="noopener" href="http://www.example.com,保存名称为/">www.example.com，保存名称为</a> “CNAME”，格式为 “所有文件”（无 .txt 后缀）。</p>
+<p>清除缓存等文件并重新发布网站：</p>
+<p>hexo clean   # 清除缓存文件等<br>hexo g       # 生成页面<br>hexo s       # 启动预览<br>现在就可以使用自己的域名访问 Hexo 博客了。</p>
+<h1 id="B-开启-HTTPS"><a href="#B-开启-HTTPS" class="headerlink" title="B 开启 HTTPS"></a>B 开启 HTTPS</h1><p>配置自己的域名后，需要我们手动开启 HTTPS。打开博客所在 GitHub 仓库，Settings -&gt; 下拉找到 GitHub Pages -&gt; 勾选 Enforce HTTPS。</p>
 
       
     </div>
