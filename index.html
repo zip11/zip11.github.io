@@ -71,6 +71,60 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-hexo使用排除错误" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/06/01/hexo%E4%BD%BF%E7%94%A8%E6%8E%92%E9%99%A4%E9%94%99%E8%AF%AF/" class="article-date">
+  <time class="dt-published" datetime="2022-06-01T04:52:11.075Z" itemprop="datePublished">2022-06-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/06/01/hexo%E4%BD%BF%E7%94%A8%E6%8E%92%E9%99%A4%E9%94%99%E8%AF%AF/">hexo使用排除错误</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+         <br>
+
+<h2 id="Branch-‘master’-set-up-to-track-remote-branch-‘main’-from"><a href="#Branch-‘master’-set-up-to-track-remote-branch-‘main’-from" class="headerlink" title="Branch ‘master’ set up to track remote branch ‘main’ from"></a>Branch ‘master’ set up to track remote branch ‘main’ from</h2><p>浏览器打开 Github 仓库, 点击 Settings -&gt; Branches 修改默认分支为 main.</p>
+<p>在2020年10月1日，你创建的任何新仓库都将使用main作为默认分支，而不是master，”该公司说。但是，将 “master”设置为默认分支的现有版本库将保持原样。</p>
+<hr>
+<h2 id="hexo系列问题之部署到github时会删掉README文件"><a href="#hexo系列问题之部署到github时会删掉README文件" class="headerlink" title="hexo系列问题之部署到github时会删掉README文件"></a>hexo系列问题之部署到github时会删掉README文件</h2><p>由于本地public文件夹里没有README.md这个文件，所以在提交public文件时，github会认为你把README.md文件删掉了，同时github也会删掉仓库里的README.md文件，这就是具体的原因</p>
+<p>我们在本地的source文件里新建一个README.md文件。</p>
+<p>修改Hexo根目录下的_config.yml文件，将skip_render参数的值设置为README.md</p>
+<p>为你执行hexo g命令时，hexo会默认将source文件里的所有md文件渲染为html文件放到public中，<br>&#x2F;&#x2F;  同时README.md会被渲染为README.html文件放到public文件里<br>&#x2F;&#x2F;  加上这段设置，就是告诉hexo的解析器，你在渲染source文件里的md文件时，跳过README.md文件</p>
+<hr>
+<p> Microsoft .NET 4 Client 环境</p>
+<p><a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/download/details.aspx?id=24872">https://www.microsoft.com/en-us/download/details.aspx?id=24872</a></p>
+<hr>
+<p>不工作 - 它显示一条错误消息，说明This view has crashed!</p>
+<p>安装Awesomium 1.6.6 SDK</p>
+<p><a target="_blank" rel="noopener" href="http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe">http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zip11.github.io/2022/06/01/hexo%E4%BD%BF%E7%94%A8%E6%8E%92%E9%99%A4%E9%94%99%E8%AF%AF/" data-id="cl3v4mooz0000kwa12lku9u1x" data-title="hexo使用排除错误" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-md编辑器" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/06/01/md%E7%BC%96%E8%BE%91%E5%99%A8/" class="article-date">
@@ -128,10 +182,19 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/06/01/Hexo%E5%85%A5%E9%97%A8%E6%93%8D%E4%BD%9C%20/">Hexo入门操作</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p> title: Hexo入门操作 </p>
- <br>    
+         <br>    
   
 
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2> <br>
@@ -171,7 +234,7 @@ $ hexo new [layout]
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zip11.github.io/2022/06/01/Hexo%E5%85%A5%E9%97%A8%E6%93%8D%E4%BD%9C%20/" data-id="cl3v4bmst0000voa173okbn84" data-title="" class="article-share-link">Share</a>
+      <a data-url="https://zip11.github.io/2022/06/01/Hexo%E5%85%A5%E9%97%A8%E6%93%8D%E4%BD%9C%20/" data-id="cl3v4bmst0000voa173okbn84" data-title="Hexo入门操作" class="article-share-link">Share</a>
       
       
       
@@ -265,11 +328,15 @@ $ hexo new [layout]
       <ul>
         
           <li>
+            <a href="/2022/06/01/hexo%E4%BD%BF%E7%94%A8%E6%8E%92%E9%99%A4%E9%94%99%E8%AF%AF/">hexo使用排除错误</a>
+          </li>
+        
+          <li>
             <a href="/2022/06/01/md%E7%BC%96%E8%BE%91%E5%99%A8/">md编辑器</a>
           </li>
         
           <li>
-            <a href="/2022/06/01/Hexo%E5%85%A5%E9%97%A8%E6%93%8D%E4%BD%9C%20/">(no title)</a>
+            <a href="/2022/06/01/Hexo%E5%85%A5%E9%97%A8%E6%93%8D%E4%BD%9C%20/">Hexo入门操作</a>
           </li>
         
           <li>
